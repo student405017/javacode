@@ -64,9 +64,9 @@ public class wolfkill {
             }
             System.out.println("請輸入 4 到 10 之間的有效數字：");
         }
-    }
+    }   
 
-    private static Player[] createPlayers(int playerCount, Random random) {
+    private static Player[] createPlayers(int playerCount, Random random) { 
         Player[] players = new Player[playerCount];
         int wolfIndex = random.nextInt(playerCount);
 
@@ -74,7 +74,7 @@ public class wolfkill {
             String role = (i == wolfIndex) ? WEREWOLF : VILLAGER;
             players[i] = new Player(i + 1, role);
         }
-        return players;
+        return  players;
     }
 
     private static void showRolesToPlayers(Player[] players, Scanner scanner) {
